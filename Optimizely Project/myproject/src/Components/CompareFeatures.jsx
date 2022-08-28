@@ -211,7 +211,7 @@ function CompareFeatures(){
 
 
                         <Text textAlign={'left'} ml='45px' mt={'50px'} fontSize={'xl'} fontWeight='bold'>Orchestrate</Text>
-                        <Text mt='-25px' ml={'70px'}>includes Create, plus...</Text>
+                        <Text mt='-25px' ml={'150px'}>includes Create, plus...</Text>
                         <Text ml='45px' mt={'15px'}  textAlign={'left'} fontWeight='bold'>Security</Text>
 
                         <Img ml='60px' mt={'15px'} src="https://www.optimizely.com/dist/786373202e4ca405a1c1.svg"  />
