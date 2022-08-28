@@ -19,7 +19,7 @@ function Home(){
     return (
         <Box>
             <Navbar />
-        <Box w={"100%"} h="600px"  display={'flex'}>
+        <Box w={"100%"} h="600px"  display={'flex'} >
             <Box w={'40%'} >
                 <Heading textAlign={'left' } mt='140px' ml='120px' w={'55%'} fontSize={'7xl'}  fontWeight={'bold'}>Unlock digital potential</Heading>
                 <Text mt={'30px'} ml={'120px'} textAlign={'left'} w='70%' >Creating digital experiences that transform your company takes data-driven decisions, continued experimentation and constant invention. Optimizely Digital Experience Platform helps you unlock your digital potential.</Text>
@@ -72,7 +72,7 @@ function Home(){
 
 
 
-                    <Box w={'100%'} h='300px' bg='#861dff' color={'white'} p='15px' display={'flex'} >
+                    <Box w={'100%'} h='300px' bg='#861dff' color={'white'} p='15px' display={'flex'}  >
 
                         <Box w={'32%'}  h='100%' >
                             <Link ml={'-220px'} fontSize={'2xl'} fontWeight='bold' >Content</Link>
@@ -192,7 +192,7 @@ function Home(){
                     </Box>
 
 
-                <Box w={'85%'} h='800px' border={'1px solid black'} mt='15px' ml={'100px'} display='flex' >
+                <Box w={'85%'} h='800px' border={'1px solid black'} mt='15px' ml={'100px'} display='flex' mb='25px'>
                     
                     <Box w={'5%'} h='100%' bg='#0037ff'></Box>
 

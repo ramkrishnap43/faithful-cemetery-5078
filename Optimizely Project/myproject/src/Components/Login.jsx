@@ -15,8 +15,9 @@ import {
     Img,
   } from '@chakra-ui/react';
   import { FcGoogle } from 'react-icons/fc';
+  import {Link as Navlink} from "react-router-dom"
   
-  import { Link as NavLink } from "react-router-dom"
+  
 
 function Login(){
 
@@ -35,12 +36,13 @@ function Login(){
 
             <Box ml={"35%"}  w={"30%"} h="-2px" border={"1px solid lightgrey"}></Box>
 
-
-            <Button w={'30%'} mt="30px" h="50px" variant={'outline'} leftIcon={<FcGoogle />}>
+        <Navlink to='/https://accounts.google.com/AddSession/signinchooser?hl=en&continue=https%3A%2F%2Fmail.google.com&service=mail&ec=GAlAFw&flowName=GlifWebSignIn&flowEntry=AddSession'>
+        <Button w={'30%'} mt="30px" h="50px" variant={'outline'} leftIcon={<FcGoogle />}>
                 <Center>
                     <Text>Sign in with Google</Text>
                 </Center>
         </Button>
+        </Navlink>
 
         
 
@@ -53,8 +55,9 @@ function Login(){
                 <Input w={"30%"} mt="10px" h="45px" placeholder='bob@atomicmarketing.com' />
             </Box>
 
-            <Button backgroundColor={"#b895ec"} color="white" mt={"35px"} h="50px" w={"30%"} fontSize={"xl"} fontWeight="normal">Sign up</Button>
-
+            <Navlink to='/' >
+                <Button backgroundColor={"#b895ec"} color="white" mt={"35px"} h="50px" w={"30%"} fontSize={"xl"} fontWeight="normal">Sign up</Button>
+            </Navlink>
             <Text mt={"30px"} fontSize="sm">By signing up, you agree to the <Link color={"#6c56d8"}>Terms </Link> & <Link color={"#6c56d8"}>Policy </Link>.</Text>
 
 

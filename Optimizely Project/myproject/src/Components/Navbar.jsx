@@ -7,7 +7,7 @@ import {
     Stack,
     Collapse,
     Icon,
-    Link,
+   
     Popover,
     PopoverTrigger,
     PopoverContent,
@@ -16,6 +16,7 @@ import {
     useDisclosure,
     Img,
   } from '@chakra-ui/react';
+  import { Link } from 'react-router-dom';
  
 
   import { BiSearchAlt2 } from 'react-icons/bi'
@@ -34,9 +35,13 @@ function Navbar(){
                 
                
                     <Box display={"flex"}  ml={"30px"} justifyContent={"space-between"}>
-                        <Img cursor={"pointer"} ml={"80px"} mt="15px" src='https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg' />
+                        <Link to='/'>
+                            <Img cursor={"pointer"} ml={"80px"} mt="15px" src='https://www.optimizely.com/globalassets/02.-global-images/navigation/optimizely_logo_navigation.svg' />
+                        </Link>
                         <Text  _hover={{color:"#0037ff"}} cursor={"pointer"} ml={"80px"} mt="28px">Products</Text>
-                        <Text  _hover={{color:"#0037ff"}} cursor={"pointer"} ml={"42px"}  mt="28px">Plans</Text>
+                        <Link to='/plans'>
+                            <Text  _hover={{color:"#0037ff"}} cursor={"pointer"} ml={"42px"}  mt="28px">Plans</Text>
+                        </Link>
                         <Text  _hover={{color:"#0037ff"}} cursor={"pointer"} ml={"42px"} mt="28px">Resources</Text>
                         <Text  _hover={{color:"#0037ff"}} cursor={"pointer"} ml={"42px"} mt="28px">Partners</Text>
                     </Box>
@@ -52,7 +57,9 @@ function Navbar(){
 
                    
                        
-                        <Text _hover={{color:"#0037ff"}} cursor={"pointer"} display={"flex"} mr={"35px"} mt="28px">  <CgProfile />Login</Text>
+                        <Link to='/login'>
+                            <Text _hover={{color:"#0037ff"}} cursor={"pointer"} display={"flex"} mr={"35px"} mt="28px">  <CgProfile />Login</Text>
+                        </Link>
 
                     
                     <Button  _hover={{backgroundColor:"#702bd8"}} mr={"80px"} borderRadius="45px" mt={"19px"} w="150px" color={"white"} backgroundColor="#0037ff">Get started</Button>
